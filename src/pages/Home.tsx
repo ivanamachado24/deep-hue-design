@@ -20,10 +20,7 @@ const Home = () => {
       <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse" />
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
       <div className="absolute top-1/2 left-1/4 w-48 h-48 bg-secondary/30 rounded-full blur-2xl" />
-      
-      {/* Translucent shapes */}
-      <div className="absolute top-32 right-1/4 w-64 h-64 border border-primary/20 rounded-3xl rotate-12 backdrop-blur-sm" />
-      <div className="absolute bottom-32 left-1/3 w-48 h-48 border border-accent/20 rounded-2xl -rotate-6 backdrop-blur-sm" />
+    
 
       {/* Hero Content */}
       <div className="container mx-auto px-6 py-20 relative z-10">
@@ -36,14 +33,15 @@ const Home = () => {
           {/* Text with glow effect */}
           <div className="relative mb-6">
             <div className="absolute inset-0 blur-3xl bg-gradient-to-r from-primary/30 via-accent/30 to-secondary/30 animate-pulse" style={{ animationDuration: '3s' }} />
-            <h1 className="relative text-5xl md:text-7xl font-bold bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text text-transparent leading-tight animate-fade-in">
+            <h1 className="relative text-5xl md:text-7xl font-bold bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text  leading-tight animate-fade-in text-purple-800">
+
               Creative Developer
               <br />
               & Designer
             </h1>
           </div>
 
-          <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed animate-fade-in text-slate-700" style={{ animationDelay: '0.2s' }}>
             Crafting beautiful, functional web experiences with modern technologies
             and thoughtful design.
           </p>
