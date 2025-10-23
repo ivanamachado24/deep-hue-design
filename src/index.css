@@ -8,47 +8,47 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Deep black base with pastel accents */
-    --background: 0 0% 5.5%; /* #0E0E0E */
-    --foreground: 40 12% 98%; /* #FAF9F6 cream white */
+    /* Soft pastel light base with elegant accents */
+    --background: 36 50% 96%; /* #FAF7F2 warm beige */
+    --foreground: 0 0% 15%; /* #262626 dark gray */
 
-    --card: 0 0% 8%;
-    --card-foreground: 40 12% 98%;
+    --card: 0 0% 100%; /* white cards */
+    --card-foreground: 0 0% 15%;
 
-    --popover: 0 0% 7%;
-    --popover-foreground: 40 12% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 15%;
 
     /* Lilac pastel primary */
-    --primary: 282 28% 80%; /* #CDB4DB lilac */
-    --primary-foreground: 0 0% 5.5%;
+    --primary: 282 35% 70%; /* #C5A3DB lilac */
+    --primary-foreground: 0 0% 100%;
 
     /* Warm beige secondary */
-    --secondary: 36 52% 93%; /* #F5EBDD beige */
-    --secondary-foreground: 0 0% 5.5%;
+    --secondary: 36 52% 88%; /* #EFE4D3 beige */
+    --secondary-foreground: 0 0% 15%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 60%;
+    --muted: 282 20% 95%; /* #F5F2F7 light lavender */
+    --muted-foreground: 0 0% 45%;
 
-    /* Dusty rose accent */
-    --accent: 0 18% 90%; /* #EAD8D8 rose */
-    --accent-foreground: 0 0% 5.5%;
+    /* Soft rose accent */
+    --accent: 350 50% 92%; /* #F5E5E9 rose */
+    --accent-foreground: 0 0% 15%;
 
     --destructive: 0 72% 51%;
-    --destructive-foreground: 40 12% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 20%;
-    --input: 0 0% 18%;
-    --ring: 282 28% 80%;
+    --border: 282 15% 88%; /* #E8E3EC soft lavender */
+    --input: 282 15% 93%;
+    --ring: 282 35% 70%;
 
     --radius: 1rem;
 
     /* Gradient tokens */
-    --gradient-hero: linear-gradient(135deg, hsl(282 28% 80% / 0.1), hsl(0 18% 90% / 0.1));
-    --gradient-card: linear-gradient(180deg, hsl(0 0% 8%), hsl(0 0% 6%));
+    --gradient-hero: linear-gradient(135deg, hsl(282 40% 90% / 0.5), hsl(350 50% 95% / 0.5));
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%), hsl(282 20% 98%));
     
     /* Shadow tokens */
-    --shadow-soft: 0 8px 32px hsl(282 28% 80% / 0.1);
-    --shadow-glow: 0 0 40px hsl(282 28% 80% / 0.15);
+    --shadow-soft: 0 8px 32px hsl(282 35% 70% / 0.15);
+    --shadow-glow: 0 0 40px hsl(282 35% 70% / 0.2);
     
     /* Transition */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
