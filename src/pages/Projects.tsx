@@ -1,10 +1,21 @@
 import ProjectCard from "@/components/ProjectCard";
 import { projects } from "@/data/projects";
 import { Briefcase } from "lucide-react";
+import heroArtistic from "@/assets/hero-artistic.jpg";
 
 const Projects = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-muted/30 to-secondary/20 relative overflow-hidden">
+    <div className="min-h-screen relative overflow-hidden">
+      {/* Artistic background - same as Home */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src={heroArtistic} 
+          alt="" 
+          className="w-full h-full object-cover opacity-40"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-background/80 via-primary/10 to-accent/20" />
+      </div>
+
       {/* Decorative background elements */}
       <div className="absolute top-20 right-10 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
       <div className="absolute bottom-20 left-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl" />

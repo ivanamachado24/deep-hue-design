@@ -15,6 +15,7 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
+import heroArtistic from "@/assets/hero-artistic.jpg";
 
 const contactSchema = z.object({
   name: z.string().trim().min(2, "Name must be at least 10 characters").max(100, "Name must be less than 100 characters"),
@@ -58,8 +59,23 @@ const Contact = () => {
   };
 
   return (
-    <div className="container mx-auto px-6 py-16">
-      <div className="max-w-2xl mx-auto">
+    <div className="min-h-screen relative overflow-hidden">
+      {/* Artistic background - same as Home */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src={heroArtistic} 
+          alt="" 
+          className="w-full h-full object-cover opacity-40"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-background/80 via-primary/10 to-accent/20" />
+      </div>
+
+      {/* Floating geometric shapes */}
+      <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+
+      <div className="container mx-auto px-6 py-16 relative z-10">
+        <div className="max-w-2xl mx-auto">
         <header className="mb-12 text-center">
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 border border-primary/20 mb-6">
             <Mail className="w-8 h-8 text-primary" />
@@ -157,6 +173,7 @@ const Contact = () => {
             </Form>
           )}
         </div>
+      </div>
       </div>
     </div>
   );
